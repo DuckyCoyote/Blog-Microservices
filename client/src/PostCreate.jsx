@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 
 export default function PostCreate() {
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState("");
 
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    await axios.post('http://localhost:4000/posts', { title });
-    
-    setTitle('');
+    await axios.post("http://posts.com/posts/create", { title });
+
+    setTitle("");
   };
 
   return (
