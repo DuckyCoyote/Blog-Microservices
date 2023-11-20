@@ -3,10 +3,10 @@ import axios from "axios";
 
 export default function CommentCreate({ postId }) {
   const [content, setContent] = useState("");
-
+  console.log(postId);
   const onSubmit = async (event) => {
     event.preventDefault();
-
+    console.log(content);
     await axios.post(`http://posts.com/posts/${postId}/comments`, {
       content,
     });
