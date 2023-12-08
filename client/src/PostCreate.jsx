@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 export default function PostCreate() {
@@ -26,7 +26,9 @@ export default function PostCreate() {
             type="text"
           />
         </div>
-        <button className="btn btn-info">Submit</button>
+        <button className="btn btn-info" type="button">
+          Submit
+        </button>
       </form>
     </div>
   );
